@@ -23,12 +23,12 @@ sdk install java 17.0.9-tem
 sudo service apache2 start
 
 # Clonando el repositorio.
-git clone https://github.com/vacax/virtualhost-proxyreverso
+git clone https://github.com/Armandogl14/virtualhost-parcial-2.git
 
 # Copiando los archivos de configuración en la ruta indicada.
-sudo cp ~/virtualhost-proxyreverso/configuraciones/virtualhost.conf /etc/apache2/sites-available/
-sudo cp ~/virtualhost-proxyreverso/configuraciones/seguro.conf /etc/apache2/sites-available/
-sudo cp ~/virtualhost-proxyreverso/configuraciones/proxyreverso.conf /etc/apache2/sites-available/
+sudo cp ~/virtualhost-parcial-2/configuraciones/virtualhost.conf /etc/apache2/sites-available/
+sudo cp ~/virtualhost-parcial-2/configuraciones/seguro.conf /etc/apache2/sites-available/
+sudo cp ~/virtualhost-parcial-2/configuraciones/proxyreverso.conf /etc/apache2/sites-available/
 
 # Creando las estructuras de los archivos.
 sudo mkdir -p /var/www/html/app1 /var/www/html/app2
@@ -39,8 +39,8 @@ printf "<h1>Sitio Aplicacion #2</h1>" | sudo tee /var/www/html/app2/index.html
 
 # Clonando el proyecto ORM y moviendo a la carpeta descargada.
 cd ~/
-git clone https://github.com/vacax/orm-jpa
-cd orm-jpa
+git clone https://github.com/Armandogl14/parcial-2-web.git
+cd parcial-2-web
 
 # Ejecutando la creación de fatjar
 ./gradlew shadowjar
