@@ -43,7 +43,8 @@ git clone https://github.com/Armandogl14/parcial-2-web.git
 cd parcial-2-web
 
 # Ejecutando la creación de fatjar
+chmod +x gradlew
 ./gradlew shadowjar
 
 # Subiendo la aplicación puerto por defecto.
-java -jar ~/parcial-2-web/build/libs/app.jar > ~/parcial-2-web/build/libs/salida.txt 2> ~/parcial-2-web/build/libs/error.txt &
+java -jar ~/parcial-2-web/build/libs/app.jar &
