@@ -37,7 +37,7 @@ sudo mkdir -p /var/www/html/app1 /var/www/html/app2
 printf "<h1>Sitio Aplicacion #1</h1>" | sudo tee /var/www/html/app1/index.html
 printf "<h1>Sitio Aplicacion #2</h1>" | sudo tee /var/www/html/app2/index.html
 
-# Clonando el proyecto ORM y moviendo a la carpeta descargada.
+# Clonando el proyecto y moviendo a la carpeta descargada.
 cd ~/
 git clone https://github.com/Armandogl14/parcial-2-web.git
 cd parcial-2-web
@@ -46,4 +46,4 @@ cd parcial-2-web
 ./gradlew shadowjar
 
 # Subiendo la aplicación puerto por defecto.
-java -jar ~/orm-jpa/build/libs/app.jar > ~/orm-jpa/build/libs/salida.txt 2> ~/orm-jpa/build/libs/error.txt &
+java -jar ~/parcial-2-web/build/libs/app.jar > ~/parcial-2-web/build/libs/salida.txt 2> ~/parcial-2-web/build/libs/error.txt &
