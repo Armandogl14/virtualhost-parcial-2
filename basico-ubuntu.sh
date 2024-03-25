@@ -47,4 +47,5 @@ chmod +x gradlew
 ./gradlew shadowjar
 
 # Subiendo la aplicación puerto por defecto.
-java -jar ~/parcial-2-web/build/libs/app.jar &
+mkdir -p ~/parcial-2-web/build/libs/
+java -jar ~/parcial-2-web/build/libs/app.jar > ~/parcial-2-web/build/libs/salida.txt 2> ~/parcial-2-web/build/libs/error.txt &
